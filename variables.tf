@@ -22,3 +22,27 @@ variable "logic_app_name" {
   type        = string
   description = "name of the azurerm_logic_app_standard"
 }
+
+variable "account_tier" {
+  type        = string
+  description = "(optional) describe your variable"
+  default     = "Standard"
+}
+
+variable "account_replication_type" {
+  type        = string
+  description = "(optional) describe your variable"
+  default     = "LRS"
+}
+
+variable "sku_tier" {
+  type        = string
+  description = "Specifies the plan's pricing tier."
+  default     = "WorkflowStandard"
+}
+
+variable "sku_size" {
+  type        = string
+  description = "Specifies the plan's instance size."
+  default     = "WS1"
+}
