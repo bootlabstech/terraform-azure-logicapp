@@ -1,5 +1,5 @@
 output "azurerm_storage_account" {
-  value = azurerm_storage_account.sa
+  value = azurerm_storage_account.storage_account
 }
 
 output "azurerm_app_service_plan" {
