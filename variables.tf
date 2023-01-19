@@ -13,10 +13,10 @@ variable "sa_name" {
   description = "name of the azurerm_storage_account"
 }
 
-# variable "appservice_name" {
-#   type        = string
-#   description = "name of the azurerm_app_service_plan"
-# }
+variable "appservice_name" {
+  type        = string
+  description = "name of the azurerm_app_service_plan"
+}
 
 variable "logic_app_name" {
   type        = string
@@ -35,14 +35,12 @@ variable "account_replication_type" {
   default     = "LRS"
 }
 
-# variable "sku_tier" {
-#   type        = string
-#   description = "Specifies the plan's pricing tier."
-#   default     = "WorkflowStandard"
-# }
+variable "sku_tier" {
+  type        = string
+  description = "Specifies the plan's pricing tier."
+}
 
-# variable "sku_size" {
-#   type        = string
-#   description = "Specifies the plan's instance size."
-#   default     = "WS1"
-# }
+variable "sku_size" {
+  type        = string
+  description = "Specifies the plan's instance size."
+}
