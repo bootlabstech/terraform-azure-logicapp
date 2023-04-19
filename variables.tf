@@ -44,3 +44,7 @@ variable "sku_size" {
   type        = string
   description = "Specifies the plan's instance size."
 }
+variable "kind" {
+  type        = string
+  description = "Specifies the plan's instance size."
+}
